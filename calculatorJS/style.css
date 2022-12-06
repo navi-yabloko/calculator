@@ -1,0 +1,67 @@
+.wrapper {
+  width: 350px;
+  height: 800px;
+  border: 1px solid black;
+  border-radius: 15px;
+  border-color: black;
+  color: white;
+  padding: 20px;
+  margin: 0px auto;
+  background-color: black;
+  padding-left: 1px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "a b c d"
+    "aa bb cc dd"
+    "aaa aaa aaa aaa"
+    "aaaa aaaa aaaa aaaa"
+    "zero zero aaaaa aaaaa";
+
+  grid-gap: 5px;
+  justify-content: center;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  background-color: grey;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.btn:active {
+  filter: brightness(0.8);
+}
+.btn-orange {
+  background-color: orange;
+}
+.btn-white {
+  background-color: darkgray;
+  color: black;
+}
+.zero {
+  grid-area: zero;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.screen {
+  height: 110px;
+  padding: 10px;
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 20px;
+  font-size: 3.2rem;
+}
